@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div{
+      width: 400px;
+    }
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    ul li{
+      border: 1px solid #D74D47;
+      width: 178px;
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    span[class*="icon"]{
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-image: url(./img/home-page-icons.png);
+      margin: auto;
+      background-repeat: no-repeat;
+    }
+    li .icon1{
+      background-position: -160px 0px;
+    }
+    li .icon2{
+      background-position: -240px 0px;
+    }
+    li .icon3{
+      background-position: 0px 0px;
+    }
+    li .icon4{
+      background-position: -40px 0px;
+    }
+    li .icon5{
+      background-position: -120px 0px;
+    }
+    li .icon6{
+      background-position: -200px 0px;
+    }
+    li .icon7{
+      background-position: -320px 0px;
+    }
+    li .icon8{
+      background-position: -280px 0px;
+    }
+    li:hover{
+      background-color: #D74D47;
+    }
+    li:hover span[class*="icon"]{
+      background-position-y: -40px;
+    }
+    li>span:last-child{
+      color: #D74D47;
+    }
+    li:hover span{
+      color: #fff;
+    }
+    ul>li:nth-child(2n){
+      border-left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <ul class="clearfix">
+      <li>
+        <span class="icon1"></span>
+        <span>远程医疗</span>
+      </li>
+      <li>
+        <span class="icon2"></span>
+        <span>在线导医</span>
+      </li>
+      <li>
+        <span class="icon3"></span>
+        <span>疫情防控</span>
+      </li>
+      <li>
+        <span class="icon4"></span>
+        <span>专家门诊时刻表</span>
+      </li>
+      <li>
+        <span class="icon5"></span>
+        <span>就诊须知</span>
+      </li>
+      <li>
+        <span class="icon6"></span>
+        <span>院外门诊</span>
+      </li>
+      <li>
+        <span class="icon7"></span>
+        <span>党建专栏</span>
+      </li>
+      <li>
+        <span class="icon8"></span>
+        <span>人才招聘</span>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

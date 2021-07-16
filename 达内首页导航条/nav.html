@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    ul li{
+      list-style: none;
+      width: 224px;
+      height: 60px;
+      border-bottom: solid 1px #1C252D;
+      line-height: 60px;
+      background-color: #292D32;
+      color: #999999;
+    }
+    ul{
+      position: relative;
+      background-color: rgba(97, 189, 137, 0.829);
+      box-shadow: 0 0 5px 5px rgb(170, 151, 151,0.2);
+      width: 1200px;
+      margin: 30px auto;
+      border-radius: 20px;
+    }
+    ul li>a{
+      width: 160px;
+      height: 60px;
+      font-size: 14px;
+      position: absolute;
+      left: 30px;
+    }
+    li>span{
+      position: absolute;
+      left: 190px;
+    }
+    ul li>div{
+      position: absolute;
+      top: 0;
+      left: 226px;
+      display:none;
+      width: 830px;
+      height: 426px;
+      background-color: #F6F6F8;
+      margin-left: -2px;
+    }
+    ul li:hover>div{
+      display: block;
+    }
+    .first-li{
+      border-top-left-radius: 10px;
+    }
+    .last-li{
+      border-bottom-left-radius: 10px;
+      border-bottom: none;
+    }
+    ul li:hover{
+      background-color: #fff;
+      color: black;
+    }
+    ul li:hover a{
+      cursor: pointer;
+    }
+    .list .first-a{
+      border-radius: 20px;
+      background-color: #EEE;
+      color: #1A1A1A;
+      height: 30px;
+      width: 110px;
+      display: inline-block;
+      text-align: center;
+      padding: 0;
+      line-height: 30px;
+    }
+    .lianjie .list{
+      padding: 10px 0 10px 0;
+      width: 790px;
+      margin-left: 20px;
+    }
+    .lianjie{
+      height: 275px;
+      background-color: #fff;
+    }
+    .list a{
+      font-size: 14px;
+      color: #999;
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+    .lianjie .other-list{
+      border-top: solid 1px #EEE;
+    }
+    .photo{
+      margin-top: 8px;
+      height: 143px;
+      background-color: #fff;
+    }
+    .photo .item .item-img>img{
+      width: 120px;
+      border-radius: 10px;
+    }
+    .photo .item .item-img{
+      float: left;
+    }
+    .photo .item{
+      width: 365px;
+      float: left;
+      margin-top:36px;
+      margin-left: 30px;
+    }
+    .photo .item .content{
+      margin-top: 10px;
+      margin-left: 130px;
+      width: 235px;
+    }
+    h5{
+      line-height: 0;
+    }
+    .photo .item .content span{
+      font-size: 14px;
+      color: #999;
+      line-height: 0;
+    }
+    .first-a~a:hover{
+      color: cornflowerblue;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="first-li">
+      <a>前端/后端开发</a>
+      <span>＞</span>
+      <div>
+        <div  class="lianjie">
+          <div class="list">
+            <a class="first-a">前端开发</a>
+            <a>Web前端</a>
+          </div>
+          <div  class="list other-list">
+            <a class="first-a">后端开发</a>
+            <a>Java</a>
+            <a>Python</a>
+            <a>JAVA培优</a>
+            <a>Go语言与区块链</a>
+            <a>C#/.Net</a>
+            <a>C/C++</a>
+            <a>PHP</a>
+          </div>
+        </div>
+        <div class="photo">
+          <div class="item">
+            <div class="item-img">
+              <img src="./danei_nav/c079cd3ec3154c62916dc864095ef0ae.jpg" alt="">
+            </div>
+            <div class="content">
+              <h5>Java高手加薪课程</h5>
+              <span>达内重磅推出的JAVA高手加薪课...</span>
+            </div>
+          </div>
+          <div  class="item">
+            <div class="item-img">
+              <img src="./danei_nav/40d6f6da36cf497586b29f3d9069f2fa.jpg" alt="">
+            </div>
+            <div class="content">
+              <h5>Java软件架构课</h5>
+              <span>由传统架构师迈向互联网架构师...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a>大数据/云计算</a>
+      <span>＞</span>
+      <div>
+        <div class="lianjie">
+          <div class="list">
+            <a class="first-a">大数据</a>
+            <a>大数据</a>
+          </div>
+          <div  class="list other-list">
+            <a class="first-a">云计算</a>
+            <a>linux云计算</a>
+          </div>
+        </div>
+        <div class="photo">
+          <div class="item">
+            <div class="item-img">
+              <img src="./danei_nav/5302df23e4ec4fc88216f2127c438c3b.jpg" alt="">
+            </div>
+            <div class="content">
+              <h5>大数据+实战高薪课</h5>
+              <span>达内在线大数据培优课</span>
+            </div>
+          </div>
+          <div  class="item">
+            <div class="item-img">
+              <img src="./danei_nav/b96d40ef6562489882fbd7dac9394335.jpg" alt="">
+            </div>
+            <div class="content">
+              <h5>Linux云计算系列实战训练营2.0</h5>
+              <span>专为培养新一代“Linux运维/Pyt...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a>移动开发/游戏</a>
+      <span>＞</span>
+      <div>
+        <div class="lianjie">
+          <div class="list">
+            <a class="first-a">移动开发</a>
+            <a>小程序</a>
+            <a>Android</a>
+            <a>iOS</a>
+          </div>
+          <div  class="list  other-list">
+            <a class="first-a">游戏</a>
+            <a>Unity3D</a>
+          </div>
+        </div>
+        <div class="photo">
+          <div class="item">
+            <div class="item-img">
+              <img src="./danei_nav/486CFA775C7244D49E6E0D550C31A6E8.png" alt="">
+            </div>
+            <div class="content">
+              <h5>Unity3D入门之脚本开发</h5>
+              <span>Unity3D入门之脚本开发</span>
+            </div>
+          </div>
+          <div  class="item">
+            <div class="item-img">
+              <img src="./danei_nav/69980B7CC2634E61870DFE605C3A6C85.png" alt="">
+            </div>
+            <div class="content">
+              <h5>Android之网络通信</h5>
+              <span>Android之网络通信</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a>物联网/测试</a>
+      <span>＞</span>
+      <div>
+        <div class="lianjie">
+          <div class="list">
+            <a class="first-a">物联网</a>
+            <a>嵌入式</a>
+          </div>
+          <div  class="list other-list">
+            <a class="first-a">软件测试</a>
+            <a>软件测试</a>
+          </div>
+        </div>
+        <div class="photo">
+          <div class="item">
+            <div class="item-img">
+              <img src="./danei_nav/AF73F4970A64405295A768B17AE58F04.png" alt="">
+            </div>
+            <div class="content">
+              <h5>嵌入式之开发实战</h5>
+              <span>开发实战</span>
+            </div>
+          </div>
+          <div  class="item">
+            <div class="item-img">
+              <img src="./danei_nav/EE0DE5C881684542B3D0875CF97CAA5D.png" alt="">
+            </div>
+            <div class="content">
+              <h5>设计测试用例的方法</h5>
+              <span>设计测试用例的方法</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a>营销/产品/运营</a>
+      <span>＞</span>
+      <div>
+        <div class="lianjie">
+          <div class="list">
+            <a class="first-a">营销</a>
+            <a>网络营销</a>
+            <a>信息流</a>
+          </div>
+          <div  class="list other-list">
+            <a class="first-a">产品</a>
+            <a>产品经理</a>
+          </div>
+          <div  class="list other-list">
+            <a class="first-a">运营</a>
+            <a>新媒体运营</a>
+            <a>高级电商</a>
+            <a>网商运营</a>
+          </div>
+        </div>
+        <div class="photo">
+          <div class="item">
+            <div class="item-img">
+              <img src="./danei_nav/37FACE09F5404EDA95E9D0F4D76668D0.png" alt="">
+            </div>
+            <div class="content">
+              <h5>一周上手小程序</h5>
+              <span>本系列课程抓住了小程序开发的...</span>
+            </div>
+          </div>
+          <div  class="item">
+            <div class="item-img">
+              <img src="./danei_nav/CC18466FADF74D3A87FDA5A17AAF4D83.png" alt="">
+            </div>
+            <div class="content">
+              <h5>SEM搜索引擎营销</h5>
+              <span>SEM搜索引擎营销</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a>数字艺术</a>
+      <span>＞</span>
+      <div>
+        <div class="lianjie">
+          <div class="list">
+            <a class="first-a">数字艺术</a>
+            <a>UED设计画</a>
+            <a>UID设计</a>
+            <a>BVD商业视觉设计</a>
+            <a>CAD</a>
+            <a>视频剪辑</a>
+            <a>平面设计</a>
+            <a>商业插画</a>
+          </div>
+        </div>
+        <div class="photo">
+          <div class="item">
+            <div class="item-img">
+              <img src="./danei_nav/A39738762E2741B2892D358B5C6500C1.jpg" alt="">
+            </div>
+            <div class="content">
+              <h5>达内在线商业插画培优课</h5>
+              <span>专为UI设计师打造，提升原创设...</span>
+            </div>
+          </div>
+          <div  class="item">
+            <div class="item-img">
+              <img src="./danei_nav/a91007b4195a4a4dba2cc6136bb992db.jpg" alt="">
+            </div>
+            <div class="content">
+              <h5>平面设计极速入职课</h5>
+              <span>0基础设计小白快速具备入职能力</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="last-li">
+      <a>其他职业课程</a>
+      <span>＞</span>
+      <div>
+        <div class="lianjie">
+          <div class="list">
+            <a class="first-a">其他职业课程</a>
+            <a>网络运维与安全</a>
+            <a>ACC</a>
+            <a>HR</a>
+            <a>就业指导</a>
+            <a>商业办公软件</a>
+          </div>
+        </div>
+        <div class="photo">
+          <div class="item">
+            <div class="item-img">
+              <img src="./danei_nav/4d09a706a83741f8b9f303196af69862.jpg" alt="">
+            </div>
+            <div class="content">
+              <h5>华为高级认证HCIE</h5>
+              <span>提升7大实力，做ICT领域专家</span>
+            </div>
+          </div>
+          <div  class="item">
+            <div class="item-img">
+              <img src="./danei_nav/01535b1f83684f27a2725ffbbdfe06d6.jpg" alt="">
+            </div>
+            <div class="content">
+              <h5>总账会计180天实战训练营</h5>
+              <span>上市公司，真账实训，打造会计...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>
